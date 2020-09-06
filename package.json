@@ -1,0 +1,48 @@
+{
+  "name": "@doclify/lru-cache",
+  "description": "LRU cache for browser and Node.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/doclify/lru-cache.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doclify/lru-cache.js.git"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "publishConfig": {
+		"access": "public"
+	},
+  "license": "MIT",
+  "source": "src/LRU.js",
+  "browser": "dist/lru.js",
+  "main": "dist/lru.cjs.js",
+  "module": "dist/lru.esm.js",
+  "types": "lru.d.ts",
+  "engines": {
+    "node": ">=6"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "changelog": "auto-changelog -p",
+    "test": "nodeunit test/lru.js",
+    "build": "rollup --config build/rollup.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "auto-changelog": "^1.16.2",
+    "nodeunit": "^0.11.3",
+    "rollup": "^2.11.2",
+    "rollup-plugin-terser": "^6.1.0"
+  },
+  "keywords": [
+    "LRU",
+    "cache",
+    "browser",
+    "node",
+    "least",
+    "recently",
+    "used"
+  ]
+}
